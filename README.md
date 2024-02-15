@@ -117,7 +117,7 @@ Check for the existence of `SECURITY.md` and issue templates:
 ```bash
 python github_repo_management.py -t YOUR_GITHUB_TOKEN -u YOUR_USERNAME -r REPOSITORY_NAME -f
 ```
-## example
+## Output examples
 >github_checks.py --token github_pat_***** --username YoniLabell --repo GitHub-Security-Automation --settings
 output:
 Repository 'GitHub-Security-Automation' Settings:
