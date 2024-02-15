@@ -1,5 +1,4 @@
 import argparse
-import requests
 from github import Github
 
 
