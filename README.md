@@ -6,7 +6,6 @@ This Python script is designed to manage various aspects of a GitHub repository,
 ## Prerequisites
 
 - Python 3.x
-- `requests` library
 - `PyGithub` library
 
 ## Installation
