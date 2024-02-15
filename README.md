@@ -30,43 +30,6 @@ GitHub offers several access levels:
 Remember, starting with minimal access and adjusting as necessary helps maintain security and integrity of your codebase.
 
 
-# Maintaining a GitHub Repository
-
-Effective housekeeping is crucial for maintaining an organized GitHub repository. It helps both active and new contributors navigate and contribute efficiently. Here are the essentials of GitHub repository maintenance:
-
-## Issue and Pull Request Metadata
-
-Every issue and pull request (PR) should have updated metadata:
-- **Assignees**: Designate who is working on it.
-- **Labels**: Provide visual cues on task status and category.
-- **Projects**: Link to project boards for advanced management.
-- **Milestone**: Tag relevant feature or version milestones.
-
-## Adding Labels
-
-Labels are vital for categorization and prioritization. Apply 2-4 labels to each issue or PR to reflect its current status. Regularly review and update labels to ensure they remain accurate.
-
-## Making Pull Requests
-
-All significant changes should be introduced via pull requests:
-- Follow the repository's contributing guidelines.
-- Write clear and descriptive commit messages.
-- Use pull requests for all contributions, ensuring a transparent history of changes.
-
-## Reviewing Pull Requests
-
-Reviewing PRs is key to quality control:
-- Triage new PRs by updating their metadata.
-- Ensure PRs align with project goals and coding standards.
-- Provide constructive feedback and guide contributors through revisions if necessary.
-
-## Best Practices
-
-- **Regular Checks**: Weekly inspect issues and PRs for outdated tags or missing metadata.
-- **Contributing Guidelines**: Adhere to and enforce the project's contributing standards.
-- **Commit Messages**: Ensure messages clearly communicate the changes made and their purpose.
-
-Remember, maintaining a clean and organized repository encourages contributions and simplifies project management.
 # Security Training and Awareness for GitHub Repositories
 
 Ensuring that all team members are aware of and trained in security best practices is crucial for maintaining the security of GitHub repositories. Here's why it's important and how you can implement it effectively:
