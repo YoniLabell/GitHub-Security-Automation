@@ -130,7 +130,7 @@ pip install PyGithub
 
 To use this script, you need a GitHub Personal Access Token with the appropriate permissions to access repository information. You can generate a token by following the instructions in the GitHub documentation: [Creating a personal access token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token).
 
-## Usage
+## Usage github_checks.py
 
 The script supports several command-line arguments to specify the operations you want to perform. Here's how you can use it:
 
@@ -180,8 +180,35 @@ YoniLabell
 output:
 SECURITY.md does not exist in the repository.
 Issue templates do not exist in the repository.
+## Usage of github_repo_access_manager.py
 
+First, you need a GitHub personal access token with the appropriate permissions to manage repository collaborators. You can generate a token in your GitHub account's developer settings.
 
-## Note
+The script supports the following arguments:
 
-Dependency scanning and security alerts are not directly accessible via this script. Please use GitHub's UI or the GitHub API with appropriate permissions for these checks.
+- `--token`: Your GitHub personal access token (**required**).
+- `--owner`: The username of the repository owner (**required**).
+- `--repo`: The name of the repository (**required**).
+- `--username`: The username of the collaborator (required for `add` and `remove` actions).
+- `--permission`: The permission level for the collaborator (`pull`, `push`, `admin`, `maintain`, `triage`). Required for the `add` action.
+- `--action`: The action to perform (`list`, `add`, `remove`) (**required**).
+
+### Examples
+
+List all collaborators in a repository:
+
+```bash
+python script_name.py --token YOUR_TOKEN --owner REPO_OWNER --repo REPO_NAME --action list
+```
+
+Add a collaborator with `push` permission:
+
+```bash
+python script_name.py --token YOUR_TOKEN --owner REPO_OWNER --repo REPO_NAME --username COLLABORATOR_USERNAME --permission push --action add
+```
+
+Remove a collaborator:
+
+```bash
+python script_name.py --token YOUR_TOKEN --owner REPO_OWNER --repo REPO_NAME --username COLLABORATOR_USERNAME --action remove
+```
