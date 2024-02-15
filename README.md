@@ -53,6 +53,23 @@ Check for the existence of `SECURITY.md` and issue templates:
 ```bash
 python github_repo_management.py -t YOUR_GITHUB_TOKEN -u YOUR_USERNAME -r REPOSITORY_NAME -f
 ```
+## How to run example
+>github_checks.py --token github_pat_***** --username YoniLabell --repo GitHub-Security-Automation --settings
+Repository 'GitHub-Security-Automation' Settings:
+Default branch: main
+Is private: False
+
+
+
+>github_checks.py --token github_pat_***** --username YoniLabell --repo GitHub-Security-Automation --contributors
+Contributors:
+YoniLabell
+
+
+>github_checks.py --token github_pat_***** --username YoniLabell --repo GitHub-Security-Automation --files
+SECURITY.md does not exist in the repository.
+Issue templates do not exist in the repository.
+
 
 ## Note
 
