@@ -34,11 +34,10 @@ python github_repo_management.py -t YOUR_GITHUB_TOKEN -u YOUR_USERNAME -r REPOSI
 - `-t` or `--token`: Your GitHub Personal Access Token (required).
 - `-u` or `--username`: Your GitHub Username (required).
 - `-r` or `--repo`: The GitHub Repository Name you wish to manage (required).
-- `-b` or `--branch`: The branch name to check protection rules for.
 - `-c` or `--contributors`: List contributors of the repository.
 - `-f` or `--files`: Check for the existence of `SECURITY.md` and issue templates.
 - `-s` or `--settings`: Check repository settings.
-- `-a` or `--actions`: List GitHub Actions workflows.
+
 
 ### Examples
 
@@ -55,6 +54,7 @@ python github_repo_management.py -t YOUR_GITHUB_TOKEN -u YOUR_USERNAME -r REPOSI
 ```
 ## example
 >github_checks.py --token github_pat_***** --username YoniLabell --repo GitHub-Security-Automation --settings
+output:
 Repository 'GitHub-Security-Automation' Settings:
 Default branch: main
 Is private: False
@@ -62,11 +62,13 @@ Is private: False
 
 
 >github_checks.py --token github_pat_***** --username YoniLabell --repo GitHub-Security-Automation --contributors
+output:
 Contributors:
 YoniLabell
 
 
 >github_checks.py --token github_pat_***** --username YoniLabell --repo GitHub-Security-Automation --files
+output:
 SECURITY.md does not exist in the repository.
 Issue templates do not exist in the repository.
 
