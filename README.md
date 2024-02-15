@@ -2,7 +2,32 @@
 
 
 This Python script is designed to manage various aspects of a GitHub repository, including listing contributors, checking for the existence of specific files (`SECURITY.md`, issue templates), examining repository settings, and listing GitHub Actions workflows. It also allows for the retrieval of branch protection settings for a specified branch.
+# Repository Access Control Best Practices
 
+## Principle of Least Privilege (PoLP)
+
+Apply the Principle of Least Privilege to GitHub repositories to ensure users have the minimum access needed for their roles. This reduces risks like:
+
+- **Accidental Exposure**: Limits chances of sensitive data leaks.
+- **Malicious Attacks**: Decreases potential entry points for attackers.
+- **Unintended Changes**: Reduces risk of accidental code alterations.
+
+## GitHub Access Levels
+
+GitHub offers several access levels:
+
+- **Read**: View and fork the repository.
+- **Triage**: Manage issues and pull requests without code access.
+- **Write**: Contribute to the repository directly.
+- **Maintain**: Manage repository without full admin rights.
+- **Admin**: Full access to the repository, including settings and integrations.
+
+## Best Practices
+
+- Assign the **least amount of access** necessary.
+- Review and adjust permissions as needed.
+
+Remember, starting with minimal access and adjusting as necessary helps maintain security and integrity of your codebase.
 ## Prerequisites
 
 - Python 3.x
