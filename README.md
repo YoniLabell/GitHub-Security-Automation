@@ -1,7 +1,7 @@
 # GitHub-Security-Automation
 
 
-This Python script is designed to manage various aspects of a GitHub repository, including listing contributors, checking for the existence of specific files (`SECURITY.md`, issue templates), examining repository settings.
+This Python script is designed to manage various aspects of a GitHub repository, including listing contributors, checking for the existence of specific files (`SECURITY.md`, issue templates), examining repository settings and access control.
 # Repository Access Control Best Practices
 
 ## Principle of Least Privilege (PoLP)
