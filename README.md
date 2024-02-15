@@ -99,7 +99,7 @@ By prioritizing security training and awareness, you can significantly reduce th
 Before running the script, ensure you have Python 3 installed on your system. You can then install the required Python libraries using pip:
 
 ```bash
-pip install requests PyGithub
+pip install PyGithub
 ```
 
 ## Configuration
